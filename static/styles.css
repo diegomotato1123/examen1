@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    translate: 0px 25rem;
+    padding: 20px;
+}
+
+.description {
+    padding: 20px;
+    background-color: rgb(30, 31, 97);
+    text-align: justify;
+    color: white;
+}
+
+.artists {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.cantante {
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 35 -7 0 black
+}
+
+.cantante img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 35 -7 0 black
+}
+
+.cantante h3 {
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.cantante p {
+    font-size: 0.9em;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.cantante a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cantante a:hover {
+    background-color: #3f3fa7;
+}
+
+footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .artists {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .artists {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-text {
+        font-size: 28px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .artists {
+        grid-template-columns: 1fr;
+    }
+
+    .header-text {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .description {
+        padding: 15px;
+    }
+
+    .cantante {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-text {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .description {
+        padding: 10px;
+    }
+
+    .cantante {
+        padding: 10px;
+    }
+}
+
+
